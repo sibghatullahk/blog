@@ -1,8 +1,6 @@
-// src/components/BlogList.tsx
 import React from "react";
 import Link from "next/link";
 
-// Ensure your posts.json is structured like this:
 import posts from "@/data/posts.json";
 
 const BlogList: React.FC = () => {

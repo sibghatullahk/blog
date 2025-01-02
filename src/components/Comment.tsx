@@ -42,11 +42,11 @@ const Comment: React.FC<CommentProps> = ({
 
   const handleDelete = () => {
     onDelete(commentId);
-    setShowMenu(false); // Close menu after delete
+    setShowMenu(false); 
   };
 
   const handleCancel = () => {
-    setShowMenu(false); // Close menu without action
+    setShowMenu(false); 
   };
 
   return (
@@ -59,7 +59,7 @@ const Comment: React.FC<CommentProps> = ({
 
         {/* Menu (three dots) */}
         <div className="relative">
-          <button onClick={toggleMenu} className="text-gray-500 hover:text-gray-700">
+          <button aria-label="Toggle" onClick={toggleMenu} className="text-gray-500 hover:text-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -108,7 +108,7 @@ const Comment: React.FC<CommentProps> = ({
       {/* Edit mode */}
       {isEditing && (
         <div className="mt-4">
-          <input
+          <input aria-label="Edit comment"
             type="text"
             value={editedComment}
             onChange={handleEditChange}
@@ -133,7 +133,7 @@ const Comment: React.FC<CommentProps> = ({
 
       {/* Likes */}
       <div className="mt-2 flex items-center">
-        <button
+        <button aria-label="Like"
           onClick={() => onLike(commentId)}
           className="text-gray-500 hover:text-gray-700"
         >

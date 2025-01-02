@@ -1,4 +1,3 @@
-// src/app/blog/page.tsx
 import BlogList from "@/components/BlogList";
 
 

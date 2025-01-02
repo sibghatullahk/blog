@@ -1,4 +1,3 @@
-// src/components/CommentSection.tsx
 import React, { useState } from "react";
 import CommentOptionsMenu from "./CommentOptionsMenu";
 
@@ -106,7 +105,7 @@ const CommentSection: React.FC = () => {
             </div>
             {editingCommentId === comment.id ? (
               <div className="mt-2">
-                <textarea
+                <textarea aria-label="Edit comment"
                   value={editedComment}
                   onChange={(e) => setEditedComment(e.target.value)}
                   className="w-full p-2 border border-gray-300 rounded-lg"

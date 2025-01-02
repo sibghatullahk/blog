@@ -1,4 +1,3 @@
-// src/app/blog/[slug]/page.tsx
 "use client";
 import React from "react";
 import CommentSection from "@/components/CommentSection";
