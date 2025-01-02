@@ -15,7 +15,6 @@ interface CommentProps {
 const Comment: React.FC<CommentProps> = ({
   comment,
   user,
-  onReply,
   onEdit,
   onDelete,
   onLike,
